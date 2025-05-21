@@ -1,0 +1,7 @@
+- mogodb server
+- mongodb shell (CLI)
+- mongodb compass (GUI)
+- sudo systemctl start mongod
+- sudo systemctl status mongod
+- mongosh
+- mongodb-compass
