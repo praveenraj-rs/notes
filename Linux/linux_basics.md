@@ -62,6 +62,7 @@
 58. tcpdump port 22
 59. tcpdump -i eth0
 60. sudo dpkg-reconfigure tzdata - set timezone
+61. minicom -b 115200 -D /dev/ttyAMA1
 
 
 

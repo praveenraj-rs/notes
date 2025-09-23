@@ -4,17 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "437041a455306907",
+        "id": "f1ebf47e730010b2",
         "type": "tabs",
         "children": [
           {
-            "id": "b835fff2cc594d16",
+            "id": "4e4672fede52a1ae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Linux/linux_basics.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "linux_basics"
+            }
+          },
+          {
+            "id": "b7423c6e26b92c7b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Linux/Raspberry Pi Quick Manual_ Os Install + Python I_o (digital & Analog) RPI.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Raspberry Pi Quick Manual_ Os Install + Python I_o (digital & Analog) RPI"
             }
           }
         ]
@@ -49,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "crontab",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Python/python_basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for python_basics"
             }
           },
           {
@@ -136,24 +153,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning.md",
+                "file": "Linux/linux_basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Learning"
+              "title": "Outline of linux_basics"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,8 +180,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce73299260227077",
+  "active": "4e4672fede52a1ae",
   "lastOpenFiles": [
+    "Linux/Raspberry Pi Quick Manual_ Os Install + Python I_o (digital & Analog) RPI.pdf",
+    "Linux/linux_basics.md",
+    "Linux/git_commands.md",
+    "Linux/vim_commands.md",
+    "Python/python_basics.md",
     "Weblog/Dunder in Python.md",
     "Web/mysql_basics.md",
     "Web/mongodb.md",
@@ -184,10 +207,7 @@
     "Python/dunder.md",
     "Python/django.md",
     "Linux/vscode_tips.md",
-    "Linux/vim_commands.md",
-    "Linux/linux_basics.md",
     "Linux/jupyter_notebook.md",
-    "Linux/git_commands.md",
     "Linux/docker_commands.md",
     "leetcode/30_days_js_leetcode.md",
     "Java/java_advanced.md",
@@ -195,16 +215,13 @@
     "Java/java_basics.md",
     "Electronics/swastik_electronics_components_list.pdf",
     "Electronics/ESP32_pin_diagram.png",
-    "Electronics/electronics_syllabus.md",
     "Electronics/cheat_sheet_digital_electronics.pdf",
-    "Electronics/STM32.md",
     "Electronics/Network Theory/Pasted image 20250123215711.png",
     "Electronics/Network Theory/Pasted image 20250123215631.png",
     "C/C_advanced_questions.pdf",
     "C/C_notes.pdf",
     "C/C_codes.pdf",
     "AWS/AWS_CP_exam_guide.pdf",
-    "C",
     "Electronics/Network Theory/Pasted image 20250123220254.png",
     "Electronics/Network Theory/Pasted image 20250123220240.png",
     "Electronics/Network Theory/Pasted image 20250123220230.png",
