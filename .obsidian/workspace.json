@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/streamlit.md",
+                "file": "Linux/git_commands.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "streamlit"
+              "title": "git_commands"
             }
           }
         ],
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/streamlit.md",
+                "file": "Linux/git_commands.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of streamlit"
+              "title": "Outline of git_commands"
             }
           }
         ],
@@ -183,6 +183,8 @@
   },
   "active": "e70927d7d99645ab",
   "lastOpenFiles": [
+    "Python/python_virtualenv_basics.md",
+    "Python/streamlit.md",
     "C/C_codes.pdf",
     "C/C_advanced_questions.pdf",
     "C/C_basics.md",
@@ -203,7 +205,6 @@
     "Web/CRUD_nodejs_express_mongodb.md",
     "Web/colour palette.png",
     "Web/AI_chat_bot_gemini.md",
-    "Python/streamlit.md",
     "Python/opencv_basics.md",
     "Python/LL+vs+Lists+-Big+O.pdf",
     "Python/leetcode_pattern.pdf",
