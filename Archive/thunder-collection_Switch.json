@@ -1,0 +1,127 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Switch",
+    "collectionId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+    "dateExported": "2025-11-10T13:29:49.709Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a3099d44-608c-45fe-a586-fbff391ae930",
+            "colId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+            "containerId": "",
+            "name": "GetSwitch",
+            "url": "http://localhost:3500/switch?username=hexfuse",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-24T06:31:33.433Z",
+            "modified": "2025-04-04T08:48:56.162Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "hexfuse",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "eb458b3c-fecd-4b6f-9e5c-fe2b023b446b",
+            "colId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+            "containerId": "",
+            "name": "SetSwitch",
+            "url": "http://3.88.36.184:3500/switch",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-24T06:52:19.212Z",
+            "modified": "2025-04-04T16:47:05.284Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "hexfuse",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"hexfuse\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "97df8918-481c-4ed0-a6ad-bd38ef9df727",
+            "colId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+            "containerId": "",
+            "name": "GetSwitchStates",
+            "url": "http://43.204.238.159:3500/getswitchstates?username=hexfuse",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-08-02T18:03:03.082Z",
+            "modified": "2025-04-15T11:36:32.597Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "hexfuse",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "b9004544-8982-490c-93ff-e1f6b6868d57",
+            "colId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+            "containerId": "",
+            "name": "SetSwitchState",
+            "url": "http://20.244.15.4:3500/setswitchstate?username=yuvan",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-02T18:57:10.765Z",
+            "modified": "2025-04-04T08:46:56.973Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "yuvan",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"switchID\":\"switch3\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "722fdbad-6ffe-4164-add8-b0a9d9753a63",
+            "colId": "ddb84fdf-0ad9-4d32-b9ad-ae2986d879c4",
+            "containerId": "",
+            "name": "SetSwitchState Copy",
+            "url": "http://localhost:3500/setswitchstate?username=yuvan",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-04-04T08:48:21.868Z",
+            "modified": "2025-04-04T08:52:58.516Z",
+            "headers": [
+                {
+                    "name": "username",
+                    "value": "yuvan"
+                }
+            ],
+            "params": [
+                {
+                    "name": "username",
+                    "value": "yuvan",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"yuvan\",\n  \"switchID\":\"switch1\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "aeLBFxYYZROWwbKwGwHrGwsYfy34nB7or-HCV6Nki-pXTbiLLSMJQiB6ay8qvZVQfcgPtAHzjdBdUzx4UERJig"
+}

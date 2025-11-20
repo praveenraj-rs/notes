@@ -765,3 +765,11 @@ Host host1
 ```
 
 so, `ssh host1`
+
+
+### Lid Close
+
+| Method                     | What to do                     | Effect                            |
+| -------------------------- | ------------------------------ | --------------------------------- |
+| Settings → Power           | “When Lid Closed → Do Nothing” | Quick, simple                     |
+| `/etc/systemd/logind.conf` | Set `HandleLidSwitch=ignore`   | Works system-wide (for all users) |
