@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "437041a455306907",
+        "id": "eb40d3e517490815",
         "type": "tabs",
         "children": [
           {
-            "id": "b835fff2cc594d16",
+            "id": "059afea33924120e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Linux/git_commands.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "git_commands"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 318.5
   },
   "right": {
     "id": "d163f5365a521849",
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Python/python_basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for python_basics"
             }
           },
           {
@@ -136,24 +141,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning.md",
+                "file": "Linux/git_commands.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Learning"
+              "title": "Outline of git_commands"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 329.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,53 +168,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce73299260227077",
+  "active": "059afea33924120e",
   "lastOpenFiles": [
-    "Weblog/Dunder in Python.md",
-    "Web/mysql_basics.md",
-    "Web/mongodb.md",
-    "Web/javascript_basics.md",
-    "Web/javascript_algorithm.md",
-    "Web/HTML_CSS_reference.pdf",
-    "Web/HTML_basics.md",
-    "Web/CSS-flexbox-poster.png",
-    "Web/CSS_basics.md",
-    "Web/CRUD_nodejs_express_mongodb.md",
-    "Web/colour palette.png",
-    "Web/AI_chat_bot_gemini.md",
-    "Python/streamlit.md",
-    "Python/opencv_basics.md",
-    "Python/LL+vs+Lists+-Big+O.pdf",
-    "Python/leetcode_pattern.pdf",
-    "Python/hand_distance_opencv.md",
-    "Python/dunder.md",
-    "Python/django.md",
-    "Linux/vscode_tips.md",
-    "Linux/vim_commands.md",
     "Linux/linux_basics.md",
-    "Linux/jupyter_notebook.md",
-    "Linux/git_commands.md",
-    "Linux/docker_commands.md",
-    "leetcode/30_days_js_leetcode.md",
-    "Java/java_advanced.md",
-    "Java/java_sts_aadhithya.md",
-    "Java/java_basics.md",
-    "Electronics/swastik_electronics_components_list.pdf",
+    "Electronics/ESP32-Pinout.png",
     "Electronics/ESP32_pin_diagram.png",
-    "Electronics/electronics_syllabus.md",
-    "Electronics/cheat_sheet_digital_electronics.pdf",
+    "Linux_Device_Driver/LDD/ldd1.md",
+    "Linux_Device_Driver/LDD/ldd2.md",
+    "Linux_Device_Driver/LDD/MOK_machine_owner_key.md",
+    "Linux/RTOS and Linux.md",
+    "Linux_Device_Driver/LDD/Linux Driver Chapter 2.md",
+    "Linux_Device_Driver/Kernal_Module/TITLE.pdf",
+    "Linux_Device_Driver/Kernal_Module/ldr3TOC.fm.pdf",
+    "Linux_Device_Driver/Kernal_Module/ldr3IX.fm.pdf",
+    "Linux_Device_Driver/Kernal_Module/COPYRIGHT.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch18.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch17.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch16.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch15.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch14.pdf",
+    "Linux_Device_Driver/Kernal_Module/ch13.pdf",
+    "Linux_Device_Driver/LDD/Linux Driver Chapter 1.md",
+    "Linux_Device_Driver/LDD/MOK Machine Owner Key.md",
+    "Electronics/ESP32_30pin.webp",
+    "ML/Neural Networks.md",
+    "Electronics/MQTT.md",
+    "Electronics/RPI.md",
+    "Electronics/robotic_arm.md",
+    "Linux/vim_commands.md",
+    "STM32/RTC_LCD.md",
+    "STM32/Bluetooth RC Car.md",
+    "Linux/git_commands.md",
+    "Archive/demo.md",
+    "Untitled.canvas",
+    "Python/streamlit.md",
+    "Archive/LaTeX.md",
+    "Pasted image 20251009183543.png",
+    "Linux/Doxygen.md",
+    "Linux/jupyter_notebook.md",
     "Electronics/STM32.md",
+    "Electronics/electronics_syllabus.md",
+    "Electronics/Weather.md",
+    "Python/python_virtualenv_basics.md",
+    "Web/CSS-flexbox-poster.png",
+    "Web/colour palette.png",
     "Electronics/Network Theory/Pasted image 20250123215711.png",
     "Electronics/Network Theory/Pasted image 20250123215631.png",
-    "C/C_advanced_questions.pdf",
-    "C/C_notes.pdf",
-    "C/C_codes.pdf",
-    "AWS/AWS_CP_exam_guide.pdf",
-    "C",
     "Electronics/Network Theory/Pasted image 20250123220254.png",
-    "Electronics/Network Theory/Pasted image 20250123220240.png",
-    "Electronics/Network Theory/Pasted image 20250123220230.png",
-    "Electronics/Network Theory/Pasted image 20250123220211.png",
-    "Electronics/Network Theory/Pasted image 20250123220152.png"
+    "Electronics/Network Theory/Pasted image 20250123220240.png"
   ]
 }

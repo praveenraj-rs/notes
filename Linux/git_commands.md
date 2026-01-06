@@ -23,6 +23,7 @@ git commit -m "commit message here"
 git status
 git diff
 git diff --staged
+git show <commitid>
 git log
 git log --oneline
 git shortlog
@@ -51,8 +52,8 @@ git merge newBranch
 git push --set-upstream origin newBranch
 
 git log --oneline
-git reset commitid
-git revert commitid
+git reset <commitid>
+git revert <commitid>
 
 git reflog
 git reset HEAD@{index} # magic time machine
@@ -62,6 +63,25 @@ git clean -d --force  #delete untracked files and directories
 
 ```
 
+### ESS
+
+```
+git rm --cached 'fileName'
+export GIT_EDITOR=vim
+git show <commitid>
+
+# Print object content
+git cat-file -p <objectid>
+git cat-file blob <objectid>
+
+#show object type
+git cat-file -t <objectid>
+commit -> tree -> blob
+
+# show object size
+git cat-file -s <objectid>
+
+```
 ## Help Git
 
 ```shell

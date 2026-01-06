@@ -62,6 +62,8 @@
 58. tcpdump port 22
 59. tcpdump -i eth0
 60. sudo dpkg-reconfigure tzdata - set timezone
+61. minicom -b 115200 -D /dev/ttyAMA1
+62. ss -t -a -p
 
 
 
@@ -701,13 +703,13 @@ crontab -r
 Using the `crontab` command, you can schedule and automate repetitive tasks or script executions at specified intervals, providing a powerful tool for task automation.
 
 ## Tmux
-| **Session Management** |                           |
-|------------------------|---------------------------|
-| Start a new session     | `tmux`                    |
-| Start a named session   | `tmux new-session -s session_name` |
-| Attach to a session     | `tmux attach-session -t session_name` |
-| List all sessions       | `tmux ls`      |
-| Detach from session     | `Ctrl-b` + `d`            |
+| **Session Management** |                                       |
+| ---------------------- | ------------------------------------- |
+| Start a new session    | `tmux`                                |
+| Start a named session  | `tmux new-session -s session_name`    |
+| Attach to a session    | `tmux attach-session -t session_name` |
+| List all sessions      | `tmux ls`                             |
+| Detach from session    | `Ctrl-b` + `d`                        |
 
 | **Windows**             |                           |
 |------------------------|---------------------------|
@@ -764,3 +766,11 @@ Host host1
 ```
 
 so, `ssh host1`
+
+
+### Lid Close
+
+| Method                     | What to do                     | Effect                            |
+| -------------------------- | ------------------------------ | --------------------------------- |
+| Settings → Power           | “When Lid Closed → Do Nothing” | Quick, simple                     |
+| `/etc/systemd/logind.conf` | Set `HandleLidSwitch=ignore`   | Works system-wide (for all users) |
