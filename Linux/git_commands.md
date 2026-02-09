@@ -197,3 +197,172 @@ Deleting the branch
 ```
 git branch -d newBranch
 ```
+
+Great question 👍 — this is a **very professional habit** to build early.
+
+Below are **best practices + ready-to-use commit messages** specifically for **your encoder work**.
+
+---
+
+## ✅ General Rules for a Good Commit Message
+
+### 1️⃣ Use **imperative mood**
+
+Think: _“This commit will …”_
+
+❌ `Added encoder code`  
+✅ `Add TIM1 quadrature encoder support`
+
+---
+
+### 2️⃣ Keep subject ≤ **50 characters**
+
+Short, clear, searchable.
+
+---
+
+### 3️⃣ Explain **why**, not just what
+
+Code shows _what_, commit message explains _why_.
+
+---
+
+### 4️⃣ One logical change per commit
+
+Your change = encoder feature → one commit ✔
+
+---
+
+## 🔷 Recommended Commit Message Format
+
+```
+<type>: <short summary>
+
+<optional detailed explanation>
+```
+
+---
+
+## 🔷 Suggested Types (Common Convention)
+
+|Type|Use when|
+|---|---|
+|feat|New feature|
+|fix|Bug fix|
+|refactor|Code structure change|
+|docs|Comments / documentation|
+|test|Tests added|
+|chore|Cleanup / build changes|
+
+---
+
+## 🟢 BEST COMMIT MESSAGE FOR YOUR CASE (Recommended)
+
+### ✔ If this is a **new feature**
+
+```
+feat: add TIM1 quadrature encoder interface (X4)
+
+Configure TIM1 in encoder mode 3 with GPIO AF setup,
+input filtering, and software scaling for KY-040 encoder.
+Includes detailed register-level comments for future reference.
+```
+
+---
+
+## 🟡 If main change is **documentation/comments**
+
+```
+docs: add detailed comments for STM32 encoder interface
+
+Explain TIM1 encoder mode selection, CC/TI mapping,
+input polarity, filtering, and X4 decoding behavior.
+```
+
+---
+
+## 🔵 If this is part of learning / experimentation repo
+
+```
+feat: implement rotary encoder using TIM1 encoder mode
+
+Use hardware quadrature decoding with X4 resolution
+and debounce filtering for KY-040 mechanical encoder.
+```
+
+---
+
+## 🔴 If this is a refactor of earlier code
+
+```
+refactor: clean up TIM1 encoder initialization
+
+Reorganize GPIO and timer setup and add comprehensive
+comments explaining encoder hardware behavior.
+```
+
+---
+
+## 🔑 Ultra-Short Version (Still Acceptable)
+
+```
+feat: TIM1 quadrature encoder (X4, KY-040)
+```
+
+---
+
+## 🚫 Avoid These Commit Messages
+
+❌ `encoder working`  
+❌ `final code`  
+❌ `updated`  
+❌ `changes done`
+
+These give **zero context** later.
+
+---
+
+## 🧠 Pro Tip (Very Important)
+
+Imagine **6 months later**, you ask:
+
+> “Why did I change this?”
+
+A good commit message should answer that **without opening the code**.
+
+---
+
+## ✅ My Strong Recommendation (Use This)
+
+If I were reviewing your repo, I’d want to see:
+
+```
+feat: add TIM1 quadrature encoder interface (X4)
+
+Hardware-based quadrature decoding using STM32 TIM1
+encoder mode 3 with strong input filtering for KY-040.
+Includes register-level documentation and software
+scaling for logical step control.
+```
+
+---
+
+If you want, I can also help you:
+
+- 📌 Split this into **multiple clean commits**
+    
+- 🧾 Write **GitHub PR description**
+    
+- 🧠 Create **commit message template**
+    
+- 🏷 Tag releases professionally
+    
+
+Just say 👍
+
+
+```
+feat: add ADC_CH0 POT interface (PA0)
+
+Potentiometer (10kohm) interfacing adc code with 480 sampling cycle.
+```

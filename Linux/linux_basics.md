@@ -1,69 +1,132 @@
-# linux_basics
-# Commands 
 #linux
+## Linux Filesystem Hierarchy Standard (FHS)
+```tree
+/        → system root
+/bin     → basic commands
+/sbin    → admin commands
+/etc     → configuration (Editable Text Configuration)
+/dev     → hardware access (Deivce)
+/home    → users
+/usr     → applications
+/var     → logs & data
+/proc    → kernel info
+/sys     → hardware control
+/tmp     → temp files
+/media   → attached storatged can be viewed
+/mnt     → mounting point for external storage
+/opt     → application specific files
+/run     → store volatile runtime data
+```
 
-1. sudo useradd -m -G sftpusers -s /sbin/nologin sftpuser
-2. sudo passwd sftpuser
-3. passwd -d root
-4. passwd -l root
-5. groupadd
-6. groupdel
-7. usermod
-8. chmod
-9. chown
-10. tmux
-11. gpasswd
-12. ssh
-13. cat /etc/passwd
-14. cat /etc/groups
-15. docker
-16. openssh
-17. ssh-keygen
-18. sudo chmod 400 myAWSKey.pem
-19. ssh -i myAWSKey.pem ec2-user@192.168.1.1
-20. ssh-copy-id -i ~/.ssh/id_rsa.pub root@123.43.123
-21. systemctl status sshd
-22. sudo apt install ssh-server
-23. env
-24. variable = $(command)
-25. man test
-26. lsof -i:3000
-27. kill pidNo, kill 22326
-28. hostname -I
-29. lsusb
-30. dmesg|grep ttyUSB
-31. nmap 192.168.210.0/24
-32. ifconfig
-33. ping www.google.com
-34. traceroute www.google.com
-35. nslookup www.google.com
-36. dig www.google.com
-37. sudo apt install package_file.deb
-38. sudo apt -f install package_file.deb
-39. sudo dpkg -i package_file.deb
-40. sudo dpkg -i --force-all package_file.deb
-41. sudo apt-get remove package_name
-42. sudo add-apt-repository
-43. curl -X POST -H "Content-Type: application/json" -d @book.json http://localhost:3500/sensorasdf
-44. 
-45. python3 -m http.server 8000
-46. npx http-server -p 8080 
-47. sudo systemctl start service
-48. sudo systemctl enable service
-49. sudo systemctl stop service
-50. sudo systemctl disable service
-51. `export PATH=/home/praveenrajrs/Desktop:$PATH`
-52. whereis
-53. which command
-54. sudo chmod a+rw /dev/ttyUSB0
-55. . ws or source ws 
-56. tail -f filename.txt
-57. mkdir {frontend, backend, dev, test}
-58. tcpdump port 22
-59. tcpdump -i eth0
-60. sudo dpkg-reconfigure tzdata - set timezone
-61. minicom -b 115200 -D /dev/ttyAMA1
-62. ss -t -a -p
+###  User and Group Management
+
+```shell
+adduser user           # create user
+groupadd group         # create a group
+usermod -aG group user # append user to the group
+usermod -rG group user # remove user from the group
+groups user            # list the group the user involved
+chmod 755 file         # change file access permission
+chown user:group file  # change owner (user and group) for file
+chmod g+s dir          # SGID group inheritence
+chmod +t dir           # sticky bit (protect delete)
+
+id                     # print real and effective user and group IDs
+groups                 # groups - print the groups a user is in
+```
+
+### Networking Cheatsheet
+
+```shell
+ping www.google.com -c 5
+hostname -I
+tracepath google.com
+mtr google.com              # My TraceRoute
+nslookup google.com         # Name Server Lookup
+dig google.com              # Domain Information Groper
+wget google.com/doc.txt 
+
+ss -tuln
+ss -tan
+ss -tulpn
+ss -s
+
+ip link → Interface control
+ip addr → IP configuration
+ip route → Routing table
+ip neigh → ARP table
+```
+### UFW (Uncomplicated FireWall)
+
+```shell
+ufw status verbose
+ufw enable | disable | reset
+ufw default deny incoming
+ufw default allow outgoing
+
+ufw allow ssh
+ufw allow 22/tcp
+ufw deny 23/tcp
+ufw reject 23/tcp
+
+ufw allow from 192.168.1.10
+ufw allow from 192.168.1.0/24 to any port 1883
+ufw allow out 53/udp
+
+ufw status numbered
+ufw delete <rule_number>
+```
+
+
+# Commands 
+
+1. tmux
+2. ssh
+3. docker
+4. openssh
+5. ssh-keygen
+6. ssh -i myAWSKey.pem ec2-user@192.168.1.1
+7. ssh-copy-id -i ~/.ssh/id_rsa.pub root@123.43.123
+8. systemctl status sshd
+9. sudo apt install ssh-server
+10. env
+11. variable = $(command)
+12. man test
+13. lsof -i:3000
+14. kill pidNo, kill 22326
+15. hostname -I
+16. lsusb
+17. dmesg|grep ttyUSB
+18. nmap 192.168.210.0/24
+19. ifconfig
+20. ping www.google.com
+21. traceroute www.google.com
+22. nslookup www.google.com
+23. dig www.google.com
+24. sudo apt install package_file.deb
+25. sudo apt -f install package_file.deb
+26. sudo dpkg -i package_file.deb
+27. sudo dpkg -i --force-all package_file.deb
+28. sudo apt-get remove package_name
+29. sudo add-apt-repository
+30. curl -X POST -H "Content-Type: application/json" -d @book.json http://localhost:3500/sensorasdf
+31. 
+32. python3 -m http.server 8000
+33. npx http-server -p 8080 
+34. sudo systemctl start service
+35. sudo systemctl enable service
+36. sudo systemctl stop service
+37. sudo systemctl disable service
+38. `export PATH=/home/praveenrajrs/Desktop:$PATH`
+39. whereis
+40. which command
+41. sudo chmod a+rw /dev/ttyUSB0
+42. . ws or source ws 
+43. tail -f filename.txt
+44. mkdir {frontend, backend, dev, test}
+45. minicom -b 115200 -D /dev/ttyAMA1
+46. ss -t -a -p
+47. sudo pip3 install pyPackage --break-system-packages
 
 
 
